@@ -178,6 +178,6 @@ const loadData = path => {
   }
 };
 
-app.listen(3000, function() {
-  console.log("API listening on port 3000");
+app.listen(3333, function() {
+  console.log("API listening on port 3333");
 });
