@@ -33,7 +33,7 @@ router.get("/linhas/search/:strSearch", async (req, res) => {
 
 router.get("/linhas/all", async (req, res) => {
   const linhas = await JSON.parse(
-    loadData(path.join(__dirname, "../database/linhas.json"))
+    loadData(path.join(__dirname, "../../database/linhas.json"))
   );
   return res.send({ linhas });
 });
