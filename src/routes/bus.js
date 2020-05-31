@@ -35,8 +35,8 @@ api.interceptors.response.use(response => {
 
 // Documentaion: https://github.com/kelektiv/node-cron#readme
 // Scrape the schedules, create a backup and update the buses.json file
-// Every saturday at 02:00 AM
-const cronScrapeAndUpdate = new CronJob('00 00 02 * * 6', async () => {
+// Every monday at 02:00 AM
+const cronScrapeAndUpdate = new CronJob('00 00 02 * * 1', async () => {
   // const cronScrapeAndUpdate = new CronJob('10 50 19 * * *', async () => {
   const logDate = `----- ${new Date()} -----\r\n`;
   try {
